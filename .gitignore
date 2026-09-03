@@ -3,3 +3,5 @@ venv/
 Automotive_5.json.gz
 pos.txt
 neg.txt
+*.zip
+*.sqlite
