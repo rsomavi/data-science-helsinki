@@ -1,2 +1,5 @@
 venv/
 .ipynb_checkpoints/
+Automotive_5.json.gz
+pos.txt
+neg.txt
