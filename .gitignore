@@ -5,3 +5,10 @@ pos.txt
 neg.txt
 *.zip
 *.sqlite
+
+# Week 3 - downloaded datasets (not tracked)
+week3/*.zip
+week3/*.tar.bz2
+week3/hasy_dataset/
+week3/world_m/
+week3/cities/
