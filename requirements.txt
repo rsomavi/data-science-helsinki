@@ -36,7 +36,7 @@ cffi==2.0.0
 chardet==4.0.0
 charset-normalizer==3.4.6
 chromadb==1.1.1
-click==8.3.1
+click==8.5.0
 cloud-init==25.3
 cloudpickle==3.1.2
 colorama==0.4.6
@@ -109,14 +109,14 @@ gunicorn==23.0.0
 h11==0.16.0
 h2==4.3.0
 h5py==3.16.0
-hf-xet==1.2.0
+hf-xet==1.6.0
 hpack==4.1.0
 httpcore==1.0.9
 httplib2==0.20.2
 httptools==0.7.1
 httpx==0.28.1
 httpx-sse==0.4.3
-huggingface_hub==1.4.1
+huggingface_hub==1.32.0
 humanfriendly==10.0
 Hypercorn==0.17.3
 hyperframe==6.1.0
@@ -294,6 +294,7 @@ rich==14.3.2
 rpds-py==0.30.0
 rsa==4.7.2
 s3transfer==0.14.0
+safetensors==0.8.0
 scikit-learn==1.7.2
 scipy==1.15.3
 SecretStorage==3.3.1
@@ -328,7 +329,7 @@ tiktoken==0.12.0
 tinycss2==1.5.1
 tinyhtml5==2.1.0
 tk==0.1.0
-tokenizers==0.22.2
+tokenizers==0.23.2
 toml==0.10.2
 tomli==2.0.2
 tomli_w==1.1.0
@@ -337,6 +338,7 @@ torchvision==0.27.1+cpu
 tornado==6.5.8
 tqdm==4.67.3
 traitlets==5.16.1
+transformers==5.17.0
 tree-sitter==0.25.2
 tree-sitter-c-sharp==0.23.1
 tree-sitter-embedded-template==0.25.0
