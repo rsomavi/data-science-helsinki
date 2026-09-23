@@ -17,6 +17,7 @@ pip install -r requirements.txt
 - week3/ - Geospatial data (GIS), symbol classification (HASYv2)
 - week4/ - Zero/one/two-shot prompting with a generative language model
 - week5/ - GDPR privacy report, fairness-aware AI (direct vs indirect discrimination)
+- week6/ - Recap: TED Talks (LASSO feature selection), Random Forest tuning, TPOT AutoML
 
 ## Week 1
 
@@ -102,3 +103,28 @@ pip install -r requirements.txt
 - Demonstrating that a gender-blind regression only detects indirect discrimination
   (Simpson's paradox), not direct discrimination applied as a flat adjustment
 - Auditing for bias by explicitly including the protected attribute as a covariate
+
+## Week 6 (Recap)
+
+### Exercise 1 - Linear regression with feature selection
+- Parsing TED Talks ratings and tags (stored as string-encoded Python objects)
+- One-hot encoding the top-100 most common tags into a (2550, 104) dataset
+- Linear regression to predict views, Funny, Confusing and Inspiring ratings
+- LASSO-based variable selection (per-target tuned alpha) to identify the
+  most predictive tags, with improved R² over the full 100-tag model for
+  two of the four targets
+- Summary of tags associated with more views and better/worse ratings
+
+### Exercise 2 - Symbol classification (part 2)
+- Random forest classifier on the HASYv2 digit data (week 3), untuned baseline
+- Effect of the n_estimators hyperparameter (10-200 trees) on test accuracy
+- Why tuning hyperparameters directly on the test set is methodologically
+  incorrect (hyperparameter overfitting)
+- Correct 80/10/10 train/validation/test split, with the final model chosen
+  via validation and evaluated once on the untouched test set
+
+### Exercise 3 - TPOT
+- AutoML pipeline search with TPOT (genetic programming over models,
+  preprocessing and hyperparameters) on the HASYv2 data
+- Comparison against the manually-tuned models from Exercise 2 and the
+  week 3 logistic regression baseline
