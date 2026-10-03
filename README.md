@@ -18,6 +18,7 @@ pip install -r requirements.txt
 - week4/ - Zero/one/two-shot prompting with a generative language model
 - week5/ - GDPR privacy report, fairness-aware AI (direct vs indirect discrimination)
 - week6/ - Recap: TED Talks (LASSO feature selection), Random Forest tuning, TPOT AutoML
+- bonus/ - EDA of unemployment in Finland (Statistics Finland + World Bank), AI Act risk classification
 
 ## Week 1
 
@@ -128,3 +129,29 @@ pip install -r requirements.txt
   preprocessing and hyperparameters) on the HASYv2 data
 - Comparison against the manually-tuned models from Exercise 2 and the
   week 3 logistic regression baseline
+
+## Bonus Exercises
+
+### Exercise 1 - EDA of unemployed highly educated people in Finland
+- Preprocessing Statistics Finland's employment/unemployment dataset (by year,
+  province and education level), with `Year` set as index and a derived
+  `Unemployment_rate` column (relative, not raw counts)
+- Combined with two external World Bank time series: GDP (current US$) and
+  R&D expenditure (% of GDP) for Finland, reshaped from wide to long format
+  and merged on `Year`
+- EDA: correlation between unemployment rate, GDP and R&D spending; time
+  series of average unemployment rate (highlighting the early-1990s Finnish
+  depression and the 2008-2015 financial crisis aftermath)
+- Province comparison via heatmap (province x year) and line plots for
+  selected provinces
+- Reflection on why relative rates, not raw counts, are needed for fair
+  comparison across provinces of very different population sizes
+
+### Exercise 2 - AI Act
+- Brainstormed list of 12 AI systems encountered in daily life
+- Selected and analyzed 3: Instagram/TikTok recommendation feed, Face ID
+  (facial recognition), and ChatGPT/Claude (LLM-based assistant)
+- Classified each under the AI Act's risk pyramid (Limited/Minimal Risk,
+  High-Risk, Limited/Minimal Risk respectively) with justification
+  referencing Annex III and the transparency obligations for chatbots/
+  biometric systems
