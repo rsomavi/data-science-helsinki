@@ -12,3 +12,5 @@ week3/*.tar.bz2
 week3/hasy_dataset/
 week3/world_m/
 week3/cities/
+bonus/*.csv
+bonus/*.zip
