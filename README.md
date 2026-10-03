@@ -1,6 +1,23 @@
-# Introduction to Data Science 2026 - University of Helsinki
+# Introduction to Data Science 2026 — University of Helsinki
 
-Exercises for the Introduction to Data Science course at the University of Helsinki.
+Weekly exercises and bonus work for the Introduction to Data Science course
+(DATA11001) at the University of Helsinki, completed during my Erasmus exchange
+from UAM Madrid.
+
+## Highlights
+
+- **[Bonus EDA](bonus/)** — merged Statistics Finland's unemployment data with
+  two World Bank time series (GDP, R&D spending) to explore how unemployment
+  among highly educated people in Finland tracks national economic crises
+  across provinces, with a heatmap and province-level comparisons.
+- **[Week 6 AutoML](week6/)** — compared a manually-tuned Random Forest against
+  TPOT's genetic-programming pipeline search on the HASYv2 symbol dataset.
+- **[Week 6 LASSO](week6/)** — one-hot encoded the top-100 TED Talks tags and
+  used LASSO regularization to find which tags actually predict a talk's views
+  and ratings, out of a 104-feature dataset.
+- **[Week 5 Fairness-aware AI](week5/)** — simulated salary data under direct
+  vs. indirect discrimination to show how a "gender-blind" model can still miss
+  (or wrongly flag) discrimination, depending on how it's hidden in the data.
 
 ## Setup
 
@@ -19,6 +36,8 @@ pip install -r requirements.txt
 - week5/ - GDPR privacy report, fairness-aware AI (direct vs indirect discrimination)
 - week6/ - Recap: TED Talks (LASSO feature selection), Random Forest tuning, TPOT AutoML
 - bonus/ - EDA of unemployment in Finland (Statistics Finland + World Bank), AI Act risk classification
+
+---
 
 ## Week 1
 
