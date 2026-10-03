@@ -22,6 +22,10 @@ from UAM Madrid.
 ## Setup
 
 ```bash
+Week 4 (the `gpt2-large` prompting exercise) was run on Google Colab rather than
+locally, since it requires downloading a ~3GB model. The venv below covers all
+other weeks.
+
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt

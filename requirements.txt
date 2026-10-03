@@ -19,12 +19,8 @@ pyogrio==0.13.0
 # NLP (Week 1, Week 2)
 nltk==3.10.3
 
-# Generative language models (Week 4)
-transformers
-torch
-
 # AutoML (Week 6)
-tpot
+tpot==1.1.0
 
 # HTTP requests (Bonus)
 requests==2.34.2
@@ -32,3 +28,8 @@ requests==2.34.2
 # Jupyter
 jupyter==1.1.1
 ipykernel==7.3.0
+
+# Week 4 (gpt2-large prompting) was run separately, not in this venv -
+# see note in README. If running locally, you'll additionally need:
+# transformers
+# torch
